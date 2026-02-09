@@ -20,6 +20,11 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to light mode
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+
 extra:
   social:
     - icon: fontawesome/brands/linkedin
