@@ -1,35 +1,65 @@
-site_name: Lewis Wood's Home Page
+site_name: Lewis Wood
+site_url: https://fushipanda.github.io/
+
 theme:
   name: material
+  custom_dir: overrides
+  favicon: assets/favicon/favicon.ico
   features:
     - navigation.tabs
     - navigation.tabs.sticky
     - header.autohide
+    - content.code.copy
+  font:
+    text: IBM Plex Sans
+    code: IBM Plex Mono
   palette:
-
-    # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
+      primary: black
+      accent: grey
       toggle:
         icon: material/weather-sunny
         name: Switch to dark mode
-
-    # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
+      primary: black
+      accent: grey
       toggle:
         icon: material/weather-night
         name: Switch to light mode
 
+nav:
+  - Home: index.md
+  - Blog: blog/index.md
+
+plugins: []
+
+validation:
+  nav:
+    omitted_files: ignore
+  links:
+    absolute_links: ignore
+    unrecognized_links: ignore
+
 markdown_extensions:
   - attr_list
   - md_in_html
+  - toc:
+      permalink: false
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+extra_css:
+  - stylesheets/extra.css
 
 extra:
+  generator: false
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/in/lewis-wood-se
     - icon: fontawesome/brands/github
       link: https://github.com/fushipanda
 
-copyright: Copyright &copy; 2025 Lewis Wood
+copyright: Copyright &copy; 2026 Lewis Wood

@@ -6,81 +6,134 @@ hide:
 
 # Lewis Wood
 
-## Bio <!-- ![profile](assets/images/profile.jpg){align=right style="width:7.5em; margin-left: 0.5em; margin-top: 0.5em; border-radius: 1em;"} -->
+### AI Specialist — Production AI Systems
+
+[Email](mailto:lewis.wood363@gmail.com){ .md-button .md-button--primary } [LinkedIn](https://www.linkedin.com/in/lewis-wood-se/){ .md-button } [GitHub](https://github.com/fushipanda){ .md-button } <!-- [Download CV](assets/cv.pdf){ .md-button } -->
+
+<!-- TODO: optional one-line availability or focus note, e.g. "Open to roles in applied AI — Perth or remote." -->
+
+## About
 
 I am an AI Specialist at **Global Drone Solutions** and a recent **Computer Science graduate** from the **University of Western Australia (UWA)**. My work focuses on **production AI systems**, particularly AI voice agents, intelligent automation, and real-time communication systems. My projects range from cloud-deployed AI agents, CLI tools and full-stack applications.
 
-I enjoy connecting with likeminded professionals.
+I am passionate about building AI systems that solve real-world problems, particularly in automation and monitoring.
 
-I am passionate about building AI systems that solve real-world problems, particularly in automation, monitoring. In my spare time, I experiment with local AI model deployment, 3D printing projects, and customise my Linux distribution and my raspberry pi. If you share some similar interests or would like to reach out feel free to do so below.
+<!--
+## Experience
 
-*Email: [lewis.wood363@gmail.com](mailto:lewis.wood363@gmail.com)*
+### Global Drone Solutions
 
-<!-- <span style="font-size:2em;">
-  (mailto:lewis.wood363@gmail.com)
-  (https://github.com/fushipanda)
-  (https://www.linkedin.com/in/lewis-wood-se/)
-</span> -->
+**AI Specialist** · *Month Year – Present*
 
+- TODO: highlight — what you build, the business impact, scale
+- TODO: highlight — a specific system, its users, its outcome
+- TODO: highlight — a measurable result, integration, or technology
+-->
 
+## Selected Projects
 
+### OpenMic — AI meeting notetaker
+
+Feb 2026 · Personal Project
+
+<!-- TODO: project images
+<div class="project-images">
+<img src="assets/images/projects/openmic-1.png" alt="Terminal UI">
+<img src="assets/images/projects/openmic-2.png" alt="Note Output">
+<img src="assets/images/projects/openmic-3.png" alt="Query History">
+</div>
+-->
+
+A Python CLI tool that transcribes meetings with speaker diarisation, generates structured notes from customisable templates, and lets you query across your full meeting history in natural language.
+
+Built on ElevenLabs for transcription and LangChain for agent routing across the transcription, note-generation, and query workflows. The terminal UI uses a command-driven interface (`/start`, `/stop`, `/history`, `/query`, `/notes`) with templated summary formats for technical, architectural, and decision-focused notes.
+
+Python · ElevenLabs API · LangChain · CLI
+{ .stack }
+
+[:fontawesome-brands-github: View on GitHub](https://github.com/fushipanda/openmic){ .md-button }
+
+---
+
+### Azure MCP Web Scraper
+
+Jun 2025 · Global Drone Solutions
+
+<!-- TODO: project images
+<div class="project-images">
+<img src="assets/images/projects/azure-mcp-1.png" alt="Architecture">
+<img src="assets/images/projects/azure-mcp-2.png" alt="Response Time">
+</div>
+-->
+
+A FastMCP-based web scraping service deployed on Azure Functions, giving a production AI voice agent real-time access to 20+ pages of current website data during live customer calls.
+
+Implements the Model Context Protocol for standardised AI-to-scraper communication, with a content-cleaning and LLM-optimisation pipeline delivering 2–3 second response times. Containerised and deployed on the Azure Functions Consumption Plan with basic authentication — eliminating manual knowledge base updates through on-demand retrieval.
+
+Python · FastMCP · Azure Functions · Docker
+{ .stack }
+
+---
+
+### Testing AI Models for Road Safety
+
+Aug – Nov 2024 · University Capstone Project
+
+<!-- TODO: project images
+<div class="project-images">
+<img src="assets/images/projects/road-safety-1.png" alt="Test Pipeline">
+<img src="assets/images/projects/road-safety-2.png" alt="Model Comparison">
+<img src="assets/images/projects/road-safety-3.png" alt="Results Dashboard">
+</div>
+-->
+
+My first real dive into working with AI systems. We built a Python platform for the [WA Centre for Road Safety Research](https://www.uwa.edu.au/institutes/wa-centre-for-road-safety-research/home) that tested how well AI models could interpret road imagery under challenging conditions — fog, graffiti, poor lighting, and explicit content.
+
+Integrated OpenAI's GPT, Anthropic's Claude, and Google's Gemini into a CLI tool that batch processed images and videos with simulated interference, then compared how each model interpreted what it saw.
+
+The client was pleased, but the results were eye-opening. LLM vision capabilities at the time were quite limited — these models, fundamentally built for language, struggled with visual understanding in ways that weren't immediately obvious. This taught me that working with AI isn't just about integration; understanding what these systems fundamentally can and can't do is just as important as knowing how to use them.
+
+Python · OpenAI API · Anthropic API · Google Generative AI · Image processing
+{ .stack }
+
+[:fontawesome-brands-github: View on GitHub](https://github.com/23348918/CITS3200-Group37){ .md-button }
+
+<!--
+### Next Project Title
+
+*Month Year · Context*
+
+TODO: one-paragraph summary — problem, what you built, outcome.
+
+**Stack:** TODO
+
+[GitHub Repository](https://github.com/...) · [Live Link](https://...)
+-->
+
+<!--
+## Skills
+
+**Languages** — TODO: e.g. Python, TypeScript, Go
+
+**AI / ML** — TODO: e.g. LangChain, OpenAI, Anthropic, local LLMs, RAG, vector DBs
+
+**Infrastructure** — TODO: e.g. AWS, Supabase, Docker
+
+**Other** — TODO: e.g. React Native, Linux, CI/CD
+-->
 
 ## Education
 
-### University of Western Australia <!-- ![Image title](assets/images/uwa-logo.png){align=right style="height:6em; border-radius: 0.5em;"} -->
+### University of Western Australia
 
-*Feb 2021 – Dec 2024*
+**Bachelor of Science (Computer Science)** · *Feb 2021 – Dec 2024*
 
-**Bachelor of Science (Computer Science)**
+## Outside of Work
 
+In my spare time, I experiment with local AI model deployment, 3D printing projects, and customise my Linux distribution and my Raspberry Pi.
 
-## Projects
+## Get in Touch
 
-### Testing AI Models for Road Safety
-**Aug - Nov 2024 | University Capstone Project**
+I enjoy connecting with likeminded professionals. If you share similar interests or would like to reach out, the quickest ways are below.
 
-My first real dive into working with AI systems. We built a Python platform for the [WA Centre for Road Safety Research](https://www.uwa.edu.au/institutes/wa-centre-for-road-safety-research/home) that tested how well AI models could interpret road imagery under challenging conditions - fog, graffiti, poor lighting, and explicit content.
-
-#### What We Built
-Integrated OpenAI's GPT, Anthropic's Claude, and Google's Gemini into a CLI tool that batch processed images and videos with simulated interference, then compared how each model interpreted what it saw.
-
-*[Space for screenshots of the CLI tool/interface]*
-
-#### Testing Results
-*[Space for example images showing original vs interference-applied road signs]*
-
-*[Space for comparison of AI model responses to the same challenging image]*
-
-#### What We Learned
-The client was pleased, but the results were eye-opening. LLM vision capabilities at the time were quite limited - these models, fundamentally built for language, struggled with visual understanding in ways that weren't immediately obvious. Testing with explicit content pushed these boundaries further and revealed significant limitations.
-
-*[Space for graphs/charts showing model accuracy across different interference types]*
-
-This taught me that working with AI isn't just about integration. Understanding what these systems fundamentally can and can't do is just as important as knowing how to use them.
-
-**Stack:** Python, OpenAI API, Anthropic API, Google Generative AI, image processing
-
-[GitHub Repository](https://github.com/23348918/CITS3200-Group37)
-
----
-
-<!-- ### 1. AI Voice Agent for Lead Qualification
-
-
-### 2. AI Lead Scoring System with Reinforcement Learning
-
-
-### 3. LLM Red Teaming Platform for Road Safety Research
-
-
-### 4. Berkeley Socket-Based Station Communication System
-
-### 5. LLM-Powered Discord Bot with Statistical Bias Mitigation
-
-### 6. GPS-Enabled Autonomous RC Car
-
-### 7. Game Recommendation Web Application -->
-
----
-
-*This website is a work in progress. More projects and content will be added soon.*
+[Email](mailto:lewis.wood363@gmail.com){ .md-button .md-button--primary } [LinkedIn](https://www.linkedin.com/in/lewis-wood-se/){ .md-button } [GitHub](https://github.com/fushipanda){ .md-button }
