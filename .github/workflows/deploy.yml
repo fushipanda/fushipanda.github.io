@@ -3,7 +3,7 @@ name: Deploy MkDocs
 on:
   push:
     branches:
-      - gh-pages
+      - main
 
 permissions:
   contents: read
