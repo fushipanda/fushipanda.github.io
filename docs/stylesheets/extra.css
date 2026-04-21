@@ -3,6 +3,7 @@
 .md-grid { max-width: 60rem; }
 
 .md-header__button.md-logo { display: none; }
+.md-header__title { display: none; }
 
 .md-typeset h1,
 .md-typeset h2,
@@ -128,4 +129,5 @@
 @media screen and (max-width: 59.9375em) {
   .md-typeset h1 { font-size: 2.25rem; margin-top: 1.5rem; }
   .md-typeset h2 { margin-top: 2.5rem; }
+  .md-typeset .md-button { display: block; width: 100%; text-align: center; box-sizing: border-box; }
 }
