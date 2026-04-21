@@ -8,7 +8,7 @@ hide:
 
 ### AI Specialist — Production AI Systems
 
-[Email](mailto:lewis.wood363@gmail.com){ .md-button .md-button--primary } [LinkedIn](https://www.linkedin.com/in/lewis-wood-se/){ .md-button } [GitHub](https://github.com/fushipanda){ .md-button } <!-- [Download CV](assets/cv.pdf){ .md-button } -->
+[:material-email: Email](mailto:lewis.wood363@gmail.com){ .md-button } [:fontawesome-brands-linkedin: LinkedIn](https://www.linkedin.com/in/lewis-wood-se/){ .md-button } [:fontawesome-brands-github: GitHub](https://github.com/fushipanda){ .md-button } <!-- [Download CV](assets/cv.pdf){ .md-button } -->
 
 <!-- TODO: optional one-line availability or focus note, e.g. "Open to roles in applied AI — Perth or remote." -->
 
@@ -136,4 +136,4 @@ In my spare time, I experiment with local AI model deployment, 3D printing proje
 
 I enjoy connecting with likeminded professionals. If you share similar interests or would like to reach out, the quickest ways are below.
 
-[Email](mailto:lewis.wood363@gmail.com){ .md-button .md-button--primary } [LinkedIn](https://www.linkedin.com/in/lewis-wood-se/){ .md-button } [GitHub](https://github.com/fushipanda){ .md-button }
+[:material-email: Email](mailto:lewis.wood363@gmail.com){ .md-button } [:fontawesome-brands-linkedin: LinkedIn](https://www.linkedin.com/in/lewis-wood-se/){ .md-button } [:fontawesome-brands-github: GitHub](https://github.com/fushipanda){ .md-button }

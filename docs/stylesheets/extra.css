@@ -4,6 +4,9 @@
 
 .md-header__button.md-logo { display: none; }
 .md-header__title { display: none; }
+.md-nav__button.md-logo { display: none; }
+
+[data-md-color-scheme] { --md-accent-fg-color: var(--md-default-fg-color); }
 
 .md-typeset h1,
 .md-typeset h2,
@@ -60,7 +63,7 @@
   border-color: var(--md-default-fg-color--lighter);
 }
 .md-typeset .md-button:hover,
-.md-typeset .md-button:focus {
+.md-typeset .md-button:focus-visible {
   background: var(--md-default-fg-color);
   color: var(--md-default-bg-color);
   border-color: var(--md-default-fg-color);
@@ -92,19 +95,6 @@
   border-radius: 2px;
 }
 
-.md-typeset .project-image {
-  display: block;
-  margin: 1.5rem 0;
-  border: 1px solid var(--md-default-fg-color--lighter);
-  border-radius: 2px;
-  overflow: hidden;
-}
-.md-typeset .project-image img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 .md-typeset p.stack {
   font-size: 0.8rem;
   color: var(--md-default-fg-color--light);
@@ -129,5 +119,5 @@
 @media screen and (max-width: 59.9375em) {
   .md-typeset h1 { font-size: 2.25rem; margin-top: 1.5rem; }
   .md-typeset h2 { margin-top: 2.5rem; }
-  .md-typeset .md-button { display: block; width: 100%; text-align: center; box-sizing: border-box; }
+  .md-typeset .md-button { display: block; width: 100%; text-align: center; box-sizing: border-box; margin-bottom: 0.5rem; }
 }
