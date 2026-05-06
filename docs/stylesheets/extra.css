@@ -1,10 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap');
 
-.md-grid { max-width: 60rem; }
-
-.md-header__button.md-logo { display: none; }
-.md-header__title { display: none; }
 .md-nav__button.md-logo { display: none; }
+
+/* Header layout */
+.md-header__inner {
+  min-height: 2.2rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+}
+
+.md-header__title {
+  font-family: "Tinos", Georgia, serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  flex: 0 0 auto;
+  margin: 0 0.5rem 0 0.1rem;
+}
+
+.md-header__title .md-ellipsis {
+  overflow: visible;
+}
+
+/* Desktop nav links */
+.md-header__nav-links {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  flex: 1;
+  justify-content: flex-end;
+  margin-right: 0.5rem;
+}
+
+.md-header__nav-link {
+  font-family: var(--md-text-font), sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0;
+  color: var(--md-primary-bg-color--light) !important;
+  text-decoration: none !important;
+  padding: 0.3rem 0.75rem;
+  opacity: 0.7;
+  transition: opacity 0.15s;
+}
+
+.md-header__nav-link:hover,
+.md-header__nav-link--active {
+  opacity: 1;
+}
+
+/* Hamburger — hidden on desktop, visible on mobile */
+.md-header__hamburger {
+  display: none;
+}
+
+@media screen and (max-width: 59.9375em) {
+  .md-header__nav-links { display: none; }
+  .md-header__hamburger { display: inline-flex; }
+}
 
 [data-md-color-scheme] { --md-accent-fg-color: var(--md-default-fg-color); }
 
@@ -120,4 +172,129 @@
   .md-typeset h1 { font-size: 2.25rem; margin-top: 1.5rem; }
   .md-typeset h2 { margin-top: 2.5rem; }
   .md-typeset .md-button { display: block; width: 100%; text-align: center; box-sizing: border-box; margin-bottom: 0.5rem; }
+}
+
+/* Repositories page */
+.repo-controls {
+  display: flex;
+  gap: 0.75rem;
+  margin: 2rem 0 1.5rem;
+  flex-wrap: wrap;
+}
+
+.repo-controls input,
+.repo-controls select {
+  font-family: var(--md-text-font), sans-serif;
+  font-size: 0.85rem;
+  background: var(--md-default-bg-color);
+  border: 1px solid var(--md-default-fg-color--lighter);
+  color: var(--md-default-fg-color);
+  padding: 0.4rem 0.75rem;
+  border-radius: 2px;
+  outline: none;
+  transition: border-color 0.15s;
+  appearance: none;
+}
+
+.repo-controls input {
+  flex: 1;
+  min-width: 180px;
+}
+
+.repo-controls select {
+  padding-right: 1.75rem;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23999' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 0.6rem center;
+  background-size: 8px;
+  cursor: pointer;
+}
+
+.repo-controls input:focus,
+.repo-controls select:focus {
+  border-color: var(--md-default-fg-color);
+}
+
+.repo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+  margin: 0 0 3rem;
+}
+
+.repo-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  text-decoration: none !important;
+  color: var(--md-default-fg-color) !important;
+  transition: border-color 0.12s, background 0.12s;
+}
+
+.repo-card:hover {
+  border-color: var(--md-default-fg-color);
+  text-decoration: none !important;
+}
+
+.repo-card-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.repo-name {
+  font-family: "Tinos", Georgia, serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  word-break: break-word;
+}
+
+.repo-stars {
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--light);
+  font-family: var(--md-code-font), monospace;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.repo-desc {
+  font-size: 0.875rem;
+  color: var(--md-default-fg-color--light);
+  line-height: 1.55;
+  margin: 0;
+  flex: 1;
+}
+
+.repo-meta {
+  display: flex;
+  gap: 1rem;
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--light);
+  font-family: var(--md-code-font), monospace;
+  margin-top: 0.25rem;
+  flex-wrap: nowrap;
+}
+
+.repo-lang,
+.repo-updated {
+  white-space: nowrap;
+}
+
+.repo-lang { font-weight: 500; }
+
+.repo-state {
+  grid-column: 1 / -1;
+  color: var(--md-default-fg-color--light);
+  font-size: 0.9rem;
+  margin: 1rem 0;
+}
+
+@media screen and (max-width: 59.9375em) {
+  .repo-grid { grid-template-columns: 1fr; }
+  .repo-controls { flex-direction: column; }
+  .repo-controls input { min-width: 0; }
 }

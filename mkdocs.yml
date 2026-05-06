@@ -5,10 +5,8 @@ theme:
   name: material
   custom_dir: overrides
   favicon: assets/favicon/favicon.ico
+  logo: assets/favicon/favicon-32x32.png
   features:
-    - navigation.tabs
-    - navigation.tabs.sticky
-    - header.autohide
     - content.code.copy
   font:
     text: IBM Plex Sans
@@ -31,6 +29,7 @@ theme:
 
 nav:
   - Home: index.md
+  - Repositories: repositories.md
   - Blog: blog/index.md
 
 plugins: []

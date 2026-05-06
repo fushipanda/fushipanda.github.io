@@ -1,0 +1,46 @@
+{% set class = "md-header md-header--shadow" %}
+<header class="{{ class }}" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="{{ lang.t('header') }}">
+
+    {# Logo — left #}
+    <a href="{{ config.extra.homepage | d(nav.homepage.url, true) | url }}" title="{{ config.site_name | e }}" class="md-header__button md-logo" aria-label="{{ config.site_name }}" data-md-component="logo">
+      {% include "partials/logo.html" %}
+    </a>
+
+    {# Site name — left #}
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">{{ config.site_name }}</span>
+        </div>
+      </div>
+    </div>
+
+    {# Hamburger — mobile only #}
+    <label class="md-header__button md-icon md-header__hamburger" for="__drawer" aria-label="{{ lang.t('nav.open') }}">
+      {% set icon = config.theme.icon.menu or "material/menu" %}
+      {% include ".icons/" ~ icon ~ ".svg" %}
+    </label>
+
+    {# Nav links — right, desktop only #}
+    <nav class="md-header__nav-links" aria-label="Navigation">
+      {% for nav_item in nav %}
+        <a href="{{ nav_item.url | url }}"
+           class="md-header__nav-link{% if nav_item.active %} md-header__nav-link--active{% endif %}">
+          {{ nav_item.title }}
+        </a>
+      {% endfor %}
+    </nav>
+
+    {# Theme palette toggle #}
+    {% if config.theme.palette %}
+      {% if not config.theme.palette is mapping %}
+        {% include "partials/palette.html" %}
+      {% endif %}
+    {% endif %}
+    {% if not config.theme.palette is mapping %}
+      {% include "partials/javascripts/palette.html" %}
+    {% endif %}
+
+  </nav>
+</header>

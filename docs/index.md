@@ -10,25 +10,9 @@ hide:
 
 [:material-email: Email](mailto:lewis.wood363@gmail.com){ .md-button } [:fontawesome-brands-linkedin: LinkedIn](https://www.linkedin.com/in/lewis-wood-se/){ .md-button } [:fontawesome-brands-github: GitHub](https://github.com/fushipanda){ .md-button } <!-- [Download CV](assets/cv.pdf){ .md-button } -->
 
-<!-- TODO: optional one-line availability or focus note, e.g. "Open to roles in applied AI — Perth or remote." -->
+## Hey 👋, I'm Lewis
 
-## About
-
-I am an AI Specialist at **Global Drone Solutions** and a recent **Computer Science graduate** from the **University of Western Australia (UWA)**. My work focuses on **production AI systems**, particularly AI voice agents, intelligent automation, and real-time communication systems. My projects range from cloud-deployed AI agents, CLI tools and full-stack applications.
-
-I am passionate about building AI systems that solve real-world problems, particularly in automation and monitoring.
-
-<!--
-## Experience
-
-### Global Drone Solutions
-
-**AI Specialist** · *Month Year – Present*
-
-- TODO: highlight — what you build, the business impact, scale
-- TODO: highlight — a specific system, its users, its outcome
-- TODO: highlight — a measurable result, integration, or technology
--->
+I design and ship production AI systems that help companies grow and automate their processes. I'm currently focused on building AI agent systems with speech to text capabilities, orchestration layers for multi-agent systems, and optimising multi-modal models.
 
 ## Selected Projects
 
